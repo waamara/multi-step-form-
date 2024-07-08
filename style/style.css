@@ -1,0 +1,597 @@
+@font-face {
+  font-family: "Ubuntu_Regular";
+  src: url("assets/fonts/Ubuntu-Regular.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Ubuntu_Medium";
+  src: url("assets/fonts/Ubuntu-Medium.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Ubuntu_Bold";
+  src: url("assets/fonts/Ubuntu-Bold.ttf") format("ttf");
+}
+:root {
+  --marine-blue: hsl(213, 96%, 18%);
+  --purplish-blue: hsl(243, 100%, 62%);
+  --pastel-blue: hsl(228, 100%, 84%);
+  --light-blue: hsl(206, 94%, 87%);
+  --strawberry-red: hsl(354, 84%, 57%);
+  --cool-gray: hsl(231, 11%, 63%);
+  --light-gray: hsl(229, 24%, 87%);
+  --magnolia: hsl(217, 100%, 97%);
+  --alabaster: hsl(228, 59%, 28%);
+  --white: hsl(0, 0%, 100%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100vh;
+  width: 100%;
+}
+body {
+  font-family: "Ubuntu_Regular", sans-serif;
+  font-size: 16px;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--magnolia);
+}
+
+#container {
+  width: 68%;
+  height: 80%;
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: var(--white);
+  padding: 15px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+}
+#sidebar {
+  background-image: url(../assets/images/bg-sidebar-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30%;
+  height: 100%;
+  border-radius: 16px;
+}
+#content {
+  width: 20vw;
+  height: 20vw;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 30px;
+  justify-content: space-between;
+  color: var(--white);
+  text-transform: uppercase;
+  font-family: "Ubuntu_Bold", sans-serif;
+}
+#content .circle p {
+  font-size: 1.5vw;
+  font-family: "Ubuntu_Bold", sans-serif;
+  color: white;
+}
+#content p {
+  color: var(--light-gray);
+  font-weight: 500;
+  font-size: 1vw;
+}
+.circle {
+  border: 2px solid var(--light-blue);
+  border-radius: 50%;
+  width: 4vw;
+  height: 4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.step {
+  display: flex;
+  width:18vw;
+  gap: 2vw;
+  height: 2vw;
+  line-height: 1.5vw;
+  letter-spacing: 3px;
+} 
+.step h3{
+  font-size: 1vw; 
+}
+#Step1 {
+  font-family: "Ubuntu_Regular", sans-serif;
+  margin-top: 3vw;
+  margin-left: 6vw;
+  width: 60%;
+}
+
+#Step1 h1{
+  color: var(--marine-blue);
+  font-size: 200%;
+  padding: 0.5vw 0vw;
+} 
+
+#Step3 h1{
+  color: var(--marine-blue);
+  font-size: 3vw;
+  padding: 0.5vw 0vw;
+}
+
+
+#Step1 p ,#Step3 p {
+  color: var(--cool-gray);
+  padding-bottom: 3vw;
+}
+
+#Step1 .NEP {
+  display: flex;
+  flex-direction: column;
+}
+
+#Step1 label {
+  color: var(--marine-blue);
+}
+
+#Step1 input {
+  height: 3vw;
+  border-radius: 5px;
+  border-color: var(--cool-gray);
+  padding-left: 1vw;
+  margin-top: 0.5vw;
+  margin-bottom: 2vw;
+  border-width: 1.2px;  
+  cursor: pointer; 
+  color: var(--marine-blue); 
+}
+
+#Step1 button {
+  color: white;
+  background-color: var(--marine-blue);
+  border-style: none;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-left: 28vw;
+  margin-top: 3vw; 
+} 
+
+#Step1 label {
+  font-size: medium;
+}
+
+#Step2 {
+  font-family: "Ubuntu_Medium", sans-serif;
+  margin-top: 3vw;
+  margin-left: 6vw;
+  width: 60%;
+
+}
+
+#Step2 h1 {
+  color: var(--marine-blue);
+  font-size: 190%;
+  margin-bottom: 0.5vw;
+  margin-left: 1vw;
+}
+
+#Step2 .first {
+  color: var(--cool-gray);
+  margin-bottom: 0.5vw;
+  margin-left: 1vw;
+}
+
+#Step2 .havingall {
+  display: flex;
+  flex-direction: row;
+}
+#Step2 .same {
+  height: 9vw;
+  width: 8vw;
+  border-color: var(--cool-gray);
+  border-radius: 10px;
+  border-style: solid;
+  padding: 1vw;
+  margin: 2vw 1vw;
+  border-width: 0.1vw; 
+  cursor: pointer; 
+} 
+#Step2 .selected {
+  border-color: var(--purplish-blue);
+}
+#Step2 .same:hover{
+  border-color: var(--purplish-blue);
+}
+
+
+.samei {
+  margin-top: 3vw;
+}
+
+#Step2 h4 ,#Step3 h4 {
+  color: var(--marine-blue);
+  font-weight: 600;
+}
+
+.samei p {
+  color: var(--cool-gray);
+  margin-top: 0.2vw;
+  font-size: small;
+}
+
+#billing {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: var(--magnolia);
+  padding: 0.7vw;
+  align-items: center;
+  height: 3vw;
+  width: 34vw;
+  margin-left: 1vw;
+  border-radius: 10px;
+}
+
+#billing p {
+  margin: 0vw 3vw;
+}
+
+#buttons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 8vw;
+  margin-left: 1vw;
+}
+.NextStep {
+  height: 3vw;
+  width: 7vw;
+  color: white;
+  background-color: var(--marine-blue);
+  border-style: none;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-left: 20vw;
+}
+.GoBack {
+  height: 3vw;
+  width: 7vw;
+  background-color: var(--white);
+  color: var(--cool-gray);
+  border-style: none;
+  cursor: pointer;
+}
+
+#Step3 {
+  font-family: "Ubuntu_Medium", sans-serif;
+  margin-top: 3vw;
+  margin-left:6vw;
+  width: 700px;
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1vw;  
+} 
+
+#move{
+  margin-top: 6vw; 
+  margin-left:0.8vw;
+}
+
+#addons-info{
+  height: 70%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#addons {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 600px;
+  height:300px; 
+  cursor: pointer;
+}
+.addon {
+  display: flex;
+  justify-content: space-between;
+  width: 33vw;
+  height: 5vw;
+  border: 1px solid var(--light-gray);
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.addon:hover{
+  border-color: var(--purplish-blue);
+}
+.addon input {
+  appearance: none;
+  -webkit-appearance: none;
+  display: flex;
+  align-items: center; /* Corrected property from align-content to align-items */
+  justify-content: center;
+  font-size: 2rem;
+  padding: 0.1rem;
+  border: 1px solid var(--light-gray);
+  border-radius: 2px;
+  width: 20px;
+  height: 20px;
+  margin-top: 1vw;
+  margin-left: 10px;
+  background-color: var(--white); /* Default background color */
+}
+
+.addon input:checked {
+  background-color: var(--purplish-blue);
+  border-color: blue;
+
+}
+
+.addon input:checked::before {
+  content: '✓';
+  color: white;
+  display: block;
+  font-size: 1rem;
+  text-align: center;
+  line-height: 1.8; /* Adjust to center the checkmark vertically */
+}
+
+.addon-price{
+  color:var(--purplish-blue);
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.addon-info{
+  display: flex;
+  flex-direction: column;
+  gap: 0.2vw;
+}
+.ceperated {
+  display: flex;
+  width: 70%;
+  gap: 30px;
+} 
+#Step3 h4   {
+  color: var(--marine-blue) ; 
+  font-size: 1.2vw;
+}
+
+
+#Step5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  flex-direction: column;
+  font-family: "Ubuntu_Bold", sans-serif;
+  padding: 10vw;
+  margin-left: 6vw;
+}
+
+#Step5 h1 {
+  color: var(--marine-blue);
+  font-size: 190%;
+  margin: 2vw 0;
+}
+
+#Step5 p {
+  width: 28vw;
+  text-align: center;
+  font-size: small;
+  color: var(--cool-gray);
+  line-height: 1.5vw;
+}
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 28px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 6px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+input + .slider {
+  background-color: var(--marine-blue);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--marine-blue);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(28px);
+  -ms-transform: translateX(28px);
+  transform: translateX(28px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 28px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+} 
+#Step4{
+  margin-top: 3vw; 
+  margin-left: 6vw;
+  width: 60%;
+}
+#Step4 h1{
+  color: var(--marine-blue); 
+  padding-bottom: 1vw;
+} 
+
+#Step4 .la{
+  color: var(--cool-gray); } 
+
+#Step4 .li{
+  color: var(--cool-gray); 
+} 
+
+#Confirm{
+  background-color: var(--purplish-blue);
+  margin-top: 0.5vw;  
+  margin-right: 3vw;
+}  
+
+#Confirm:hover{
+  background-color: var(--pastel-blue );
+}
+
+#rlast{
+  display:flex ; 
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: center;  
+  margin-top: 5vw;
+}
+#name ,
+#email ,
+#phone {
+  width: 60%;
+outline-color: var(--alabaster);
+border-radius: 16px;
+}
+
+#Step1 span{
+  margin-left: 43%;
+  font-size: small;
+  font-family: "Ubuntu_Bold", sans-serif;
+  font-weight: 600;
+}
+
+/*hidiing the steps*/
+#Step1,
+#Step3,
+#Step2,
+#Step5 {
+  display: none;
+}
+.NextStep:hover{
+  cursor: pointer;
+  background-color: var(--alabaster);
+}
+#NextStep1:hover{
+  cursor: pointer;
+  background-color: var(--alabaster);
+}
+.GoBack:hover{
+  cursor: pointer;
+  color: var(--marine-blue);
+}
+.hide {
+  display: none;
+}
+
+.active-circle {
+  background-color: var(--light-blue); 
+}  
+#content .active-circle p{
+  color: var(--marine-blue);
+}  
+
+#Step2 .free{
+  color: var(--marine-blue);
+}
+
+#colored{
+border-radius: 16px ;
+width: 90%;
+margin-top: 4vw;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: space-evenly;
+background-color: #ffffffcc;
+}
+#subscription{
+display: flex;
+justify-content: space-between;
+width: 90%;
+color:var(--marine-blue);
+margin-top: 1vw;
+}
+#subscription p{
+  color: var(--marine-blue);
+font-size: large;
+font-weight: 400;
+  
+}
+#selections{
+display: flex;
+justify-content: space-evenly;
+width: 90%;
+color: var(--cool-gray);
+flex-direction: column;
+height: 7vw;
+}
+#total{
+display: flex;
+justify-content: space-between;
+width: 80%;
+color: var(--cool-gray);
+margin-top: 2vw;
+margin-left: 3vw;
+}
+#change{
+  color: var(--cool-gray);
+}
+#change:hover{
+color: var(--purplish-blue);
+}
+#totalprice{
+  color: var(--purplish-blue);
+  font-size:x-large;
+  font-weight: 700;
+}
+.price{
+  color: var(--marine-blue);
+}
+.selectedaddon{
+  display: flex;
+justify-content: space-between;
+width: 100%;
+}
+#hr{
+  width: 90%;
+  color: var(--cool-gray);
+  margin-top: 1vw;
+  margin-bottom: 1cqi;
+}
